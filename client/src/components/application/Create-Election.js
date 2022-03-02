@@ -3,7 +3,7 @@ import { Divider, Form, Button, Message, Card, Input } from "semantic-ui-react";
 import axios from "axios";
 
 const endpoint = "http://localhost:4000";
-console.log(endpoint);
+//console.log(endpoint);
 
 class CreateElection extends Component {
   constructor(props) {
@@ -93,7 +93,7 @@ class CreateElection extends Component {
       console.log(res.data);
       this.setState({
         electionList: res.data,
-        items: res.data.reverse().map(election => {
+        items: res && res.data && Array.isArray(res.data) && res.data.reverse().map(election => {
           // console.log("--->", election);
           let card = {
             header: election.electionName,

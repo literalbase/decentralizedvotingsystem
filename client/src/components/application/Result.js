@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Message, Button, Table, Card } from "semantic-ui-react";
-import ElectionHeader from "../layout/Election-Header";
+import ElectionHeader from "../Layout/Election-Header";
 
 const endpoint = "http://localhost:4000";
 

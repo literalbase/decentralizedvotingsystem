@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "semantic-ui-react";
-import Header from "../src/components/layout/Header";
+import Header from "../src/components/Layout/Header";
 import CreateElection from "./components/application/Create-Election";
 import Election from "../src/components/application/Election";
 import Voters from "../src/components/application/Voters";
